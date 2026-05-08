@@ -1,0 +1,29 @@
+aid: stability-audio
+url: https://raw.githubusercontent.com/api-evangelist/stability-audio/refs/heads/main/apis.yml
+name: Stability Audio
+x-type: company
+description: >-
+  Stable Audio (by Stability AI) is a generative audio model for music and sound-effect generation. Available via Stability API and Stable Audio Tools.
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - AI
+  - Audio
+  - Music Generation
+  - SFX
+  - Stability
+created: '2026-05-08'
+modified: '2026-05-08'
+specificationVersion: '0.19'
+apis: []
+common:
+  - type: Website
+    url: https://stability.ai/stable-audio
+  - type: Plans
+    url: plans/stability-audio-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/stability-audio-rate-limits.yml
+  - type: FinOps
+    url: finops/stability-audio-finops.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
