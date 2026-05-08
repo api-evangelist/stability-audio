@@ -3,7 +3,10 @@ url: https://raw.githubusercontent.com/api-evangelist/stability-audio/refs/heads
 name: Stability Audio
 x-type: company
 description: >-
-  Stable Audio (by Stability AI) is a generative audio model for music and sound-effect generation. Available via Stability API and Stable Audio Tools.
+  Stable Audio (by Stability AI) is a generative audio model for music and sound-effect
+  generation. The Stability Developer Platform exposes Stable Audio 2.5 endpoints alongside
+  image, video, and 3D generation. Pricing is credit-based at 1 credit = $0.01; Stable
+  Audio 2.5 generations are reported at $0.20 per generation regardless of duration.
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
   - AI
@@ -14,10 +17,33 @@ tags:
 created: '2026-05-08'
 modified: '2026-05-08'
 specificationVersion: '0.19'
-apis: []
+apis:
+  - aid: stability-audio:stable-audio
+    name: Stable Audio API
+    description: >-
+      REST API for generating music and SFX clips with Stable Audio 2.5. Hosted on the
+      Stability Developer Platform at https://api.stability.ai. Authentication via API key;
+      credit-based billing.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://platform.stability.ai/docs/api-reference
+    baseURL: https://api.stability.ai
+    tags:
+      - Music Generation
+      - SFX
+      - Stable Audio
+      - Stability
+    properties:
+      - type: Documentation
+        url: https://platform.stability.ai/docs/api-reference
+      - type: SignUp
+        url: https://platform.stability.ai/account/keys
+      - type: Pricing
+        url: https://platform.stability.ai/pricing
 common:
   - type: Website
     url: https://stability.ai/stable-audio
+  - type: Documentation
+    url: https://platform.stability.ai/docs
   - type: Plans
     url: plans/stability-audio-plans-pricing.yml
   - type: RateLimits

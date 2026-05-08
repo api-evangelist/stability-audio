@@ -5,7 +5,7 @@ provider: Stability Audio
 providerId: stability-audio
 created: '2026-05-08'
 modified: '2026-05-08'
-reconciled: false
+reconciled: partial
 tags:
 - AI
 - Audio
@@ -15,21 +15,31 @@ tags:
 - Rate Limiting
 - Quotas
 - Throttling
-description: Placeholder rate-limit artifact for Stability Audio. Replace with real limits once researched.
-notes: Initial scaffold — limits have not yet been reconciled.
+description: >-
+  Stability Developer Platform rate-limits via account credit balance and per-account RPS
+  thresholds. Specific HTTP RPS caps are not publicly documented; standard 429 backoff
+  applies. Credit balance must remain positive to call the API.
+notes: Maintain positive credit balance to avoid 402 / 429 throttling on Stable Audio calls.
 sources:
-- https://stability.ai/stable-audio
+- https://platform.stability.ai/docs
+- https://platform.stability.ai/pricing
 responseCodes:
   throttled: 429
+  paymentRequired: 402
 limits:
-- name: Default
+- name: Credit Balance
   scope: account
-  metric: varies
-  limit: see provider documentation
-  notes: Pending reconciliation.
+  metric: credits
+  limit: prepaid
+- name: HTTP Requests
+  scope: account
+  metric: requests
+  limit: not publicly documented
 policies:
 - name: Backoff Strategy
   description: Clients should implement exponential backoff with jitter and honor any Retry-After header.
+- name: Credit Top-Up
+  description: Set up auto-recharge or membership to keep balance positive for production workloads.
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com

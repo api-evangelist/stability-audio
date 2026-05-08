@@ -5,7 +5,7 @@ provider: Stability Audio
 providerId: stability-audio
 created: '2026-05-08'
 modified: '2026-05-08'
-reconciled: false
+reconciled: true
 tags:
 - AI
 - Audio
@@ -15,9 +15,14 @@ tags:
 - FinOps
 - Cost Management
 - FOCUS
-description: FOCUS-aligned FinOps placeholder for Stability Audio. Pipeline will replace with real billing details.
-notes: Initial scaffold — billing model has not yet been reconciled.
+description: >-
+  FOCUS-aligned FinOps view of Stable Audio. Stability runs a credit-based platform
+  (1 credit = $0.01) shared across all developer-platform models. Stable Audio 2.5
+  generations are reported at $0.20 each (20 credits) regardless of duration. API
+  Membership ($20/mo) bundles 6,000 credits.
+notes: Decide between PAYG credit packs and the $20/mo membership based on monthly Stable Audio call volume.
 sources:
+- https://platform.stability.ai/pricing
 - https://stability.ai/stable-audio
 - https://focus.finops.org/focus-specification/v1-3/
 alignedWith:
@@ -26,10 +31,10 @@ alignedWith:
   dataSpec: FOCUS
   dataSpecVersion: '1.3'
   dataSpecUrl: https://focus.finops.org/focus-specification/v1-3/
-publisherName: Stability Audio
+publisherName: Stability AI
 serviceCategory: AI
 billingModel:
-  pricingCategory: To Be Reconciled
+  pricingCategory: Prepaid Credits + Per-Generation Usage
   billingFrequency: Monthly
   billingCurrency: USD
   chargeCategories:
@@ -37,30 +42,42 @@ billingModel:
   - Purchase
   - Adjustment
 focusColumns:
-  ServiceName: Stability Audio
+  ServiceName: Stable Audio API
   ServiceCategory: AI
-  ProviderName: Stability Audio
-  PublisherName: Stability Audio
-  InvoiceIssuerName: Stability Audio
+  ProviderName: Stability AI
+  PublisherName: Stability AI
+  InvoiceIssuerName: Stability AI
   BillingCurrency: USD
   ChargeCategory: Usage
 meters:
-- name: api_usage
-  description: Catch-all meter pending reconciliation.
-  unit: varies
+- name: stable_audio_generations
+  description: Stable Audio 2.5 generations (20 credits each = $0.20).
+  unit: generation
   aggregation: sum
   dimensions:
   - account
-  - resource
+  - model
+- name: credits_purchased
+  description: Prepaid credit purchases.
+  unit: USD
+  aggregation: sum
+  dimensions:
+  - account
+- name: api_membership
+  description: API Membership monthly fee ($20/month, 6,000 credits included).
+  unit: month
+  aggregation: sum
+  dimensions:
+  - account
 principles:
 - name: Visibility
-  description: Pull provider invoices or usage exports until a self-serve usage feed is documented.
+  description: Track per-call credit consumption in Stability platform billing dashboard.
 - name: Allocation
-  description: Tag invoice line items to consuming business units in your FinOps store.
+  description: Tag generations per creative project / consuming product.
 - name: Optimization
-  description: Levers depend on the provider's billing model; review at renewal once reconciled.
+  description: At ~300+ generations/month consider $20 membership over PAYG to lock in ~3.3K credits effective rate.
 - name: Accountability
-  description: Assign a contract owner to review billing against negotiated terms.
+  description: Assign a credit-budget owner per consuming product.
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
