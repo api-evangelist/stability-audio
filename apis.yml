@@ -50,6 +50,10 @@ common:
     url: rate-limits/stability-audio-rate-limits.yml
   - type: FinOps
     url: finops/stability-audio-finops.yml
+  - type: Integrations
+    url: https://stability.ai/partners
+integrations:
+  - name: Stability AI
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
