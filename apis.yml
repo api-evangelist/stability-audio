@@ -1,7 +1,7 @@
 aid: stability-audio
 url: https://raw.githubusercontent.com/api-evangelist/stability-audio/refs/heads/main/apis.yml
 name: Stability Audio
-x-type: company
+kind: company
 description: >-
   Stable Audio (by Stability AI) is a generative audio model for music and sound-effect
   generation. The Stability Developer Platform exposes Stable Audio 2.5 endpoints alongside
