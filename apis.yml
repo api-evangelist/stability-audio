@@ -40,6 +40,10 @@ apis:
       - type: Pricing
         url: https://platform.stability.ai/pricing
 common:
+  - type: GitHubOrganization
+    url: https://github.com/Stability-AI
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/stability-ai
   - type: Website
     url: https://stability.ai/stable-audio
   - type: Documentation
