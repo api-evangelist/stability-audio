@@ -7,7 +7,7 @@ description: >-
   generation. The Stability Developer Platform exposes Stable Audio 2.5 endpoints alongside
   image, video, and 3D generation. Pricing is credit-based at 1 credit = $0.01; Stable
   Audio 2.5 generations are reported at $0.20 per generation regardless of duration.
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - AI
   - Audio
@@ -24,7 +24,7 @@ apis:
       REST API for generating music and SFX clips with Stable Audio 2.5. Hosted on the
       Stability Developer Platform at https://api.stability.ai. Authentication via API key;
       credit-based billing.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://platform.stability.ai/docs/api-reference
     baseURL: https://api.stability.ai
     tags:
