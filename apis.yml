@@ -35,7 +35,7 @@ apis:
     properties:
       - type: Documentation
         url: https://platform.stability.ai/docs/api-reference
-      - type: SignUp
+      - type: Signup
         url: https://platform.stability.ai/account/keys
       - type: Pricing
         url: https://platform.stability.ai/pricing
