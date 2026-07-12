@@ -1,0 +1,33 @@
+generated: '2026-07-11'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: stability.ai
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Aug 15 06:18:35 2026 GMT
+  hsts: true
+  hsts_max_age: 15552000
+- host: platform.stability.ai
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep 14 11:14:45 2026 GMT
+  hsts: false
+- host: api.stability.ai
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep  1 04:35:39 2026 GMT
+  hsts: null
+domains:
+- domain: stability.ai
+  dnssec: true
+  caa:
+  - 0 issuewild "pki.goog; cansignhttpexchanges=yes"
+  - 0 issuewild "ssl.com"
+  - 0 issue "comodoca.com"
+  - 0 issue "digicert.com; cansignhttpexchanges=yes"
+  - 0 issue "letsencrypt.org"
+  - 0 issue "pki.goog; cansignhttpexchanges=yes"
+  spf: true
+  dmarc: true
+  dmarc_policy: none

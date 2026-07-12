@@ -40,6 +40,8 @@ apis:
       - type: Pricing
         url: https://platform.stability.ai/pricing
 common:
+  - type: DomainSecurity
+    url: security/stability-audio-domain-security.yml
   - type: GitHubOrganization
     url: https://github.com/Stability-AI
   - type: LinkedIn
@@ -56,6 +58,8 @@ common:
     url: finops/stability-audio-finops.yml
   - type: Integrations
     url: https://stability.ai/partners
+  - url: https://stability.ai/news-updates
+    type: Blog
 integrations:
   - name: Stability AI
 maintainers:
