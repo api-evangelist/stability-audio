@@ -1,0 +1,14 @@
+{
+  "repo": "stability-audio",
+  "feeds": [
+    {
+      "source": "https://stability.ai/news-updates",
+      "feed_url": "https://stability.ai/news-updates?format=rss",
+      "title": "",
+      "saved": 0,
+      "method": "discovered"
+    }
+  ],
+  "fetched": "2026-07-11T11:50:51Z",
+  "post_count": 20
+}
