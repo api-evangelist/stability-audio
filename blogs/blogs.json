@@ -2,6 +2,13 @@
   "repo": "stability-audio",
   "feeds": [
     {
+      "source": "https://stability.ai/news-updates?format=rss",
+      "feed_url": "https://stability.ai/news-updates?format=rss",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    },
+    {
       "source": "https://stability.ai/news-updates",
       "feed_url": "https://stability.ai/news-updates?format=rss",
       "title": "",
@@ -9,6 +16,6 @@
       "method": "discovered"
     }
   ],
-  "fetched": "2026-07-11T11:50:51Z",
-  "post_count": 20
+  "fetched": "2026-08-01T15:49:00Z",
+  "post_count": 25
 }
