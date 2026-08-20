@@ -21,6 +21,12 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/stability-audio.png
 tags:
+  - Artificial Intelligence
+  - Audio
+  - Music Generation
+  - SFX
+  - Stability
+tags_raw:
   - AI
   - Audio
   - Music Generation
