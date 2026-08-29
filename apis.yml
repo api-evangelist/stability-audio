@@ -7,6 +7,17 @@ description: >-
   generation. The Stability Developer Platform exposes Stable Audio 2.5 endpoints alongside
   image, video, and 3D generation. Pricing is credit-based at 1 credit = $0.01; Stable
   Audio 2.5 generations are reported at $0.20 per generation regardless of duration.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: paid
   onboarding: unknown
