@@ -1,0 +1,30 @@
+# Front Door AI Index — stability-audio — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: stability-audio
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: stability.ai
+  final_host: stability.ai
+  ownership: unresolved
+  owner: null
+  shares_host_with:
+  - stability-ai
+  inherited_from: null
+  verdict: scored
+  score: null
+  host_score: 25
+  density: null
+  words: 927
+  tiers:
+    agentic: 1
+    core: 23
+    model: 1
+  ambiguous: 0
+  top_terms:
+    AI: 19
+    generative ai: 3
+    Bedrock: 1
+    gen ai: 1
+    prompts: 1
