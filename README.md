@@ -1,4 +1,4 @@
-# Stability Audio (stability-audio)
+# Stability Audio
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,33 +64,104 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Stable Audio (by Stability AI) is a generative audio model for music and sound-effect generation. The Stability Developer Platform exposes Stable Audio 2.5 endpoints alongside image, video, and 3D generation.
+Stable Audio (by Stability AI) is a generative audio model for music and sound-effect generation. The Stability Developer Platform exposes Stable Audio 2.5 endpoints alongside image, video, and 3D generation. Pricing is credit-based at 1 credit = $0.01; Stable Audio 2.5 generations are reported at $0.20 per generation regardless of duration.
 
-**APIs.json:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/stability-audio/refs/heads/main/apis.yml)
+**Areas:** Artificial Intelligence · Audio · Music Generation · SFX · Stability
 
-## Type
-- **x-type:** company
+## Stability Audio on APIs.io
 
-## Tags
-- AI, Audio, Music Generation, SFX, Stability
+Everything profiled for Stability Audio is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/stability-audio/](https://apis.io/providers/stability-audio/)** — or go straight to one of the APIs or properties below.
 
-## APIs
-1. **Stable Audio API** — REST API at `https://api.stability.ai`. Credit-based billing.
+### APIs (1)
 
-## Common Properties
+- [Stable Audio API](https://apis.io/apis/stability-audio/stable-audio/) — REST API for generating music and SFX clips with Stable Audio 2.5. Hosted on the Stability Developer Platform at https://api.stability.ai. Authentication…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Stability Audio Domain Security](https://apis.io/security/stability-audio/stability-audio-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Stability Audio Plans Pricing](https://apis.io/plans/stability-audio/stability-audio-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Stability Audio Rate Limits](https://apis.io/rate-limits/stability-audio/stability-audio-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Stability Audio Finops](https://apis.io/finops/stability-audio/stability-audio-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
 - [Website](https://stability.ai/stable-audio)
 - [Documentation](https://platform.stability.ai/docs)
-- [Plans](plans/stability-audio-plans-pricing.yml) — partial
-- [RateLimits](rate-limits/stability-audio-rate-limits.yml) — partial
-- [FinOps](finops/stability-audio-finops.yml) — reconciled
+- [Blog](https://stability.ai/news-updates)
+- [GitHub](https://github.com/Stability-AI)
 
-## Pricing Snapshot
-- 1 credit = $0.01
-- Stable Audio 2.5: $0.20 per generation (20 credits, regardless of duration)
-- API Membership: $20/month with 6,000 credits included
-- Enterprise: custom
+## API Evangelist rating
 
-## Maintainers
-**FN:** Kin Lane
+**Kin Score 10.5** — minimal · rubric 0.24.0 · scored 2026-10-17
 
-**Email:** kin@apievangelist.com
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 7.9 |
+| Developer ergonomics | 2.4 |
+| Access clarity | 21.1 |
+
+**Agent readiness 0.6** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 5.5** — AI & Biometrics
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/stability-audio/](https://apis.io/providers/stability-audio/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Stability Audio: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/stability-audio/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
